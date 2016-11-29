@@ -1,0 +1,203 @@
+@import "variables.scss";
+
+body {
+  header {
+    background-color: $background-1;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    h1, li {
+      color: $header-bullets;
+      list-style-type: disc;
+      padding: 1.25em;
+      transition: .5s;
+    }
+
+    h3 {
+      color: $button-color;
+      margin: .5em 0 1em 0;
+      font-size: 2em;
+    }
+
+    ul {
+      padding: 3em 0;
+      text-align: center;
+    }
+
+    li {
+      font-size: 1.5em;
+      list-style-type: none;
+    }
+
+    input, select {
+      margin: 1em 0;
+    }
+
+    form {
+      font-size: 12px;
+    }
+  }
+
+  .col-md-12 {
+    &:first-of-type {
+      padding-top: 2em;
+      text-align: center;
+      background-color: transparent;
+    }
+
+    &:last-of-type {
+      animation-delay: 1s;
+    }
+  }
+
+  .col-md-4 {
+    i {
+      font-size: 4em;
+      padding-bottom: .25em;
+    }
+  }
+
+  .col-md-7 {
+    .checkbox {
+      padding: 0 8em 4em 0;
+    }
+  }
+
+  .row {
+    .col-md-4:first-of-type {
+      ul > li {
+        animation-delay: .15s;
+      }
+    }
+
+    .col-md-4:nth-child(2) {
+      ul > li {
+        animation-delay: .35s;
+      }
+    }
+
+    .col-md-4:last-of-type {
+      ul > li {
+        animation-delay: .65s;
+      }
+    }
+  }
+
+  .form_bg {
+    background-color: $background-5;
+    padding: 3em;
+    margin-bottom: 4em;
+    box-shadow: 0px 5px 12px #666;
+
+    h3 {
+      font-size: 3em;
+      text-align: left;
+      padding-left: .25em;
+    }
+  }
+
+  // After the header / form field section
+  .first_section {
+    text-align: center;
+    padding: 2.5em 0;
+    background-color: $background-3;
+
+    ul, li {
+      display: inline-block;
+      padding-left: 0;
+    }
+
+    li {
+      text-align: center;
+      padding: 2em;
+
+      &:first-of-type {
+        animation-delay: 1s;
+      }
+
+      &:nth-child(2) {
+        animation-delay: 1.5s;
+      }
+
+      &:last-of-type {
+        animation-delay: 2s;
+      }
+    }
+
+    i {
+      padding: .5em 0;
+      vertical-align: middle;
+      font-size: 5em;
+      border-bottom: 3px solid #333;
+    }
+
+    p {
+      font-size: 1.5em;
+      margin-top: 2em;
+    }
+
+    .container {
+      padding: 4em 0;
+    }
+
+    .row {
+      background-color: #fff;
+      border-radius: 7em;
+      padding: 2em;
+    }
+
+    .col-md-4 {
+      background-color: #fff;
+      border-radius: 50%;
+      text-align: center;
+    }
+
+    &:before {
+      content: "";
+      top: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      border: 40px solid;
+      border-color: $background-1 transparent transparent;
+    }
+  } //.first_section
+
+  // Second section (second CTA) styling
+  .second_section {
+    background-color: $background-4;
+    color: $header-bullets;
+
+    strong {
+      color: $header-bullets;
+      font-size: 1.5em;
+    }
+
+    button.btn {
+      margin: 2em;
+    }
+
+    .col-md-6 {
+      img {
+        width: 100%;
+        margin: 3em 0;
+      }
+
+      &:last-of-type {
+        text-align: center;
+        padding: 5em;
+      }
+    }
+
+    &:before {
+      content: "";
+      margin: 0 auto;
+      border: 40px solid;
+      border-color: $background-3 transparent transparent;
+    }
+  } //.second_section
+
+  footer {
+    padding: 1em 0;
+  } // footer
+} // body

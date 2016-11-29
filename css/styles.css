@@ -1,0 +1,24 @@
+body h1 {
+  font-family: "Fredoka One", cursive; }
+body h3, body li, body p, body strong, body input, body select, body a, body button {
+  font-family: "Scada", sans-serif; }
+body button.btn {
+  background-color: #D1B6E1;
+  color: #fff;
+  padding: 1em 4em;
+  font-size: 2em;
+  transition: .5s; }
+  body button.btn:hover {
+    background-color: #80559a;
+    transition: .5s;
+    color: #fff; }
+body footer {
+  padding: 1em 0; }
+  body footer .footer-company-motto, body footer .footer-links, body footer .footer-company-name {
+    text-align: center; }
+body .checkbox .terms-check input {
+  position: relative;
+  margin-left: 0px;
+  margin-right: 1em; }
+
+/*# sourceMappingURL=styles.css.map */
